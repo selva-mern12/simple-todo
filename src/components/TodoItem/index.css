@@ -2,17 +2,96 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px;
+  align-items: center;
+  margin: 10px;
+  background-color: #ffffff80;
+  border-radius: 7px;
+  padding: 10px 35px;
 }
-p {
+.checkbox-task {
+  display: flex;
+}
+label {
   color: #000000;
   font-family: Roboto;
   font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 15px;
 }
-button {
+.complete {
+  text-decoration: line-through;
+}
+.delete-button {
   background-color: transparent;
+  height: 30px;
   color: #ff0b37;
   border: #000000 solid 1px;
   border-radius: 5px;
   cursor: pointer;
+  padding: 6px 15px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  margin: 0px 10px;
+}
+.delete-button:hover {
+  background-color: #ff0b37;
+  color: #fff;
+  border: #fff solid 1px;
+}
+.edit-button {
+  color: #6e38f5;
+}
+.edit-button:hover {
+  background-color: #6e38f5;
+  color: #fff;
+  border: #fff solid 1px;
+}
+.pen {
+  height: 100%;
+  font-size: 12px;
+  display: inline-block;
+  color: #000000;
+  transform: rotate(135deg);
+  margin-left: 2px;
+}
+.user-input {
+  background-color: transparent;
+  font-size: 16px;
+  width: 30vw;
+  height: 35px;
+  border-radius: 7px;
+  outline: none;
+}
+@media (max-width: 769px) {
+  li {
+    width: 74vw;
+    margin: 10px;
+    padding: 10px;
+  }
+  label {
+    font-size: 10px;
+    margin-left: 7px;
+  }
+  .todo-buttons {
+    width: 30vw;
+  }
+  .delete-button {
+    font-size: 10px;
+    padding: 3px 8px;
+    height: auto;
+    width: 60px;
+  }
+  .checkbox-task {
+    width: 60vw;
+  }
+  .user-input {
+    width: 50vw;
+  }
+  .delete-button {
+    font-size: 10px;
+  }
+  .pen {
+    font-size: 10px;
+  }
 }
